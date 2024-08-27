@@ -334,7 +334,7 @@ while run:
 
     for i in range(4):
         for j in range(len(grid[i])):
-            screen.blit(pygame.image.load('Chiffres/'+str(grid[i][j])+'.jpeg'), [j*60+200,i*60+200])
+            screen.blit(pygame.image.load('chiffres/'+str(grid[i][j])+'.jpeg'), [j*60+200,i*60+200])
 
     font = pygame.font.SysFont("arial", 16)
     score_text = font.render(f"score : {score}", 1, (0,0,0))
