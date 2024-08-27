@@ -344,14 +344,12 @@ while run:
                 mort = False
     if mort:
         print("fin du jeu")
-        aff(grid)
         perdu = True
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
             print("fin du jeu.")
-            aff(grid)
             run = False
 
         elif event.type == pygame.KEYDOWN and not perdu:
