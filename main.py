@@ -60,11 +60,6 @@ def spawn(grid):
         grid[element[0]][element[1]] = 4
     return grid
 
-def aff(ggg):
-    print("****************")
-    for i in ggg:
-        print(i)
-
 def check(grid):
     ch = True
     for i in grid:
@@ -73,7 +68,6 @@ def check(grid):
                 ch = False
     if not ch:
         perdu = True
-        print("perdu !!!!")
 
 def droite(grid):
     global score
